@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fill Out Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Fill Out Survey</h1>
+        <form id="surveyForm">
+            <section>
+                <h2>Personal Details</h2>
+                <label for="name">Full Names:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" min="5" max="120" required>
+                <label for="date">Date of Birth:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" required>
+            </section>
+            <section>
+                <h2>Favourite Food</h2>
+                <label><input type="checkbox" name="food" value="Pizza"> Pizza</label>
+                <label><input type="checkbox" name="food" value="Pasta"> Pasta</label>
+                <label><input type="checkbox" name="food" value="Pap and Wors"> Pap and Wors</label>
+
+            </section>
+            <section>
+                <h2>Rate Your Preferences</h2>
+                <div>
+                    <p>I like to watch movies:</p>
+                    <label><input type="radio" name="movies" value="Strongly Agree" required> Strongly Agree</label>
+                    <label><input type="radio" name="movies" value="Agree"> Agree</label>
+                    <label><input type="radio" name="movies" value="Neutral"> Neutral</label>
+                    <label><input type="radio" name="movies" value="Disagree"> Disagree</label>
+                    <label><input type="radio" name="movies" value="Strongly Disagree"> Strongly Disagree</label>
+                </div>
+                <div>
+                    <p>I like to listen to the radio:</p>
+                    <label><input type="radio" name="radio" value="Strongly Agree" required> Strongly Agree</label>
+                    <label><input type="radio" name="radio" value="Agree"> Agree</label>
+                    <label><input type="radio" name="radio" value="Neutral"> Neutral</label>
+                    <label><input type="radio" name="radio" value="Disagree"> Disagree</label>
+                    <label><input type="radio" name="radio" value="Strongly Disagree"> Strongly Disagree</label>
+                </div>
+                <div>
+                    <p>I like to eat out:</p>
+                    <label><input type="radio" name="eatout" value="Strongly Agree" required> Strongly Agree</label>
+                    <label><input type="radio" name="eatout" value="Agree"> Agree</label>
+                    <label><input type="radio" name="eatout" value="Neutral"> Neutral</label>
+                    <label><input type="radio" name="eatout" value="Disagree"> Disagree</label>
+                    <label><input type="radio" name="eatout" value="Strongly Disagree"> Strongly Disagree</label>
+                </div>
+                <div>
+                    <p>I like to watch TV:</p>
+                    <label><input type="radio" name="tv" value="Strongly Agree" required> Strongly Agree</label>
+                    <label><input type="radio" name="tv" value="Agree"> Agree</label>
+                    <label><input type="radio" name="tv" value="Neutral"> Neutral</label>
+                    <label><input type="radio" name="tv" value="Disagree"> Disagree</label>
+                    <label><input type="radio" name="tv" value="Strongly Disagree"> Strongly Disagree</label>
+                </div>
+            </section>
+            <button type="submit">Submit</button>
+        </form>
+        <nav>
+            <a href="results.html">View Survey Results</a>
+        </nav>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
